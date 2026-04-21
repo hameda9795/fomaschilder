@@ -46,10 +46,14 @@ export default function OffertePage() {
                 </div>
 
                 <form
-                  action="/offerte.php"
+                  action="https://api.web3forms.com/submit"
                   method="POST"
                   className="space-y-6"
                 >
+                  <input type="hidden" name="access_key" value="ACCESS_KEY_HIER" />
+                  <input type="hidden" name="subject" value="Nieuwe offerte-aanvraag - Foma Schildersbedrijf" />
+                  <input type="hidden" name="from_name" value="Foma Website" />
+                  <input type="hidden" name="redirect" value="https://fomaschilder.nl/bedankt/" />
                   {/* Honeypot */}
                   <input
                     type="text"
