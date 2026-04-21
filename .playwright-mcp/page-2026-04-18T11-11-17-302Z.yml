@@ -1,0 +1,84 @@
+- generic [active] [ref=e1]:
+  - paragraph
+  - paragraph
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "Foma Schildersbedrijf" [ref=e4]
+      - table [ref=e6]:
+        - rowgroup [ref=e7]:
+          - row "Home Fotos 06-23153636" [ref=e8]:
+            - cell "Home" [ref=e9]:
+              - link "Home" [ref=e10] [cursor=pointer]:
+                - /url: index.html
+            - cell "Fotos" [ref=e11]:
+              - link "Fotos" [ref=e12] [cursor=pointer]:
+                - /url: fotos.html
+            - cell "06-23153636" [ref=e13]:
+              - link "06-23153636" [ref=e14] [cursor=pointer]:
+                - /url: tel:0623153636
+    - generic [ref=e16]:
+      - heading "Welkom" [level=1] [ref=e17]
+      - paragraph [ref=e18]:
+        - text: Foma Schildersbedrijf is een ervaren eenmanszaak, opgericht in 2005 door
+        - strong [ref=e19]: Hassan Shayesteh.
+        - text: Mijn specialisme ligt bij schilderwerk, zowel binnen als buiten.
+      - paragraph [ref=e20]: Daarnaast kan ik kleine aanvullende klusjes uitvoeren, zoals stucwerkreparaties, glaswerk, tegelwerk en afwerkingen.
+      - paragraph [ref=e21]: Ik ben een gekwalificeerde vakman die met zorg en netheid te werk gaat en dat tegen een REDELIJKE prijs. Tevreden klanten zijn voor mij altijd van groot belang.
+      - paragraph [ref=e22]: Ik werk uitsluitend met professionele materialen van merken zoals Sikkens en Bouwmaat, zodat kwaliteit altijd gegarandeerd is.
+      - paragraph [ref=e23]: Heeft u interesse? Vraag dan gerust hieronder een vrijblijvende offerte aan.
+      - img "Voorkant" [ref=e24]
+      - heading "Offerte aanvragen" [level=1] [ref=e25]
+      - paragraph [ref=e26]: Elke klus is anders en daarom werk ik uitsluitend met maatwerkoffertes. Om een nauwkeurige prijs te kunnen geven, bekijk ik het project altijd eerst ter plaatse. Zo kan ik de staat van het schilderwerk beoordelen en precies bepalen wat er nodig is voor een mooi en duurzaam resultaat.
+      - paragraph [ref=e27]: Wilt u een vrijblijvende indicatie of een afspraak voor een bezichtiging? Vul dan hieronder het offerteformulier in en ik neem contact met u op.
+      - generic [ref=e28]:
+        - textbox [ref=e29]
+        - table [ref=e30]:
+          - rowgroup [ref=e31]:
+            - row [ref=e32]:
+              - cell [ref=e33]:
+                - textbox "Naam" [ref=e34]
+            - row [ref=e35]:
+              - cell [ref=e36]:
+                - textbox "Email" [ref=e37]
+            - row [ref=e38]:
+              - cell [ref=e39]:
+                - textbox "Telefoonnummer" [ref=e40]
+            - row [ref=e41]:
+              - cell [ref=e42]:
+                - 'textbox "Uw aanvraag: wat wilt u waar en wanneer laten doen?" [ref=e43]'
+            - row "Verzenden Reset" [ref=e44]:
+              - cell "Verzenden Reset" [ref=e45]:
+                - button "Verzenden" [ref=e46] [cursor=pointer]
+                - button "Reset" [ref=e47] [cursor=pointer]
+      - heading "Contactgegevens" [level=1] [ref=e48]
+      - blockquote [ref=e49]:
+        - heading "Foma Schildersbedrijf" [level=3] [ref=e50]
+        - 'heading "Naam: Hassan Shayesteh Adres: Bemmelseweg 104, 6662 PD Elst Email: info@fomaschilder.nl Telefoon: 06-23153636 K.v.K nr: 09151703 BTW nr: 225278674B01" [level=5] [ref=e51]':
+          - text: "Naam: Hassan Shayesteh"
+          - text: "Adres: Bemmelseweg 104, 6662 PD Elst"
+          - text: "Email: info@fomaschilder.nl"
+          - text: "Telefoon: 06-23153636"
+          - text: "K.v.K nr: 09151703"
+          - text: "BTW nr: 225278674B01"
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph [ref=e53]: Copyright 2025 Foma Schildersbedrijf - All rights reserved
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph
+  - link "Stuur ons een WhatsApp bericht" [ref=e54] [cursor=pointer]:
+    - /url: https://wa.me/31623153636
+    - img [ref=e55]

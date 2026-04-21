@@ -1,0 +1,258 @@
+/* --- Algemene pagina container --- */
+.pagina {
+    margin: 0 auto;
+    background-color: white;
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* --- Header / menu --- */
+.kop {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-image: url(img/menu.jpg);
+    background-repeat: repeat-x;
+    background-position: 4px 33px;
+    text-align: center; /* centreren van alles */
+}
+
+/* Logo boven menu */
+.foma_logo {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 180px;
+    height: auto;
+    position: relative;
+    border: 0;
+}
+
+/* Menu */
+.menu_tabel {
+    margin: 0 auto;
+}
+
+.menu_tabel td a,
+.menu_tabel td {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+
+.menu_tabel td a:hover {
+    color: #fed95a;
+}
+
+/* Mobiel */
+@media (max-width: 600px) {
+
+    .foma_logo {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .menu_tabel td a,
+    .menu_tabel td {
+        font-size: 22px; /* zelfde grootte als desktop */
+    }
+
+    .menu_tabel td {
+        padding: 5px 10px;
+    }
+}
+
+
+/* Logo */
+.foma_logo {
+    display: block;
+    margin: 0 auto 10px auto; /* centreren */
+    width: 180px;             /* of 200px als je groter wilt */
+    height: auto;
+    position: relative;       /* niet meer absolute */
+}
+
+/* --- Layout container --- */
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* --- Content (A: verbeterd) --- */
+.content {
+    flex: 1;
+    min-width: 280px;
+    margin-top: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* --- Tekst --- */
+h1 {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+/* --- Body achtergrond --- */
+body {
+    background-image: url(img/boven.jpg);
+    background-repeat: repeat-x;
+    background-color: #414f80;
+    font-family: verdana;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* --- Links algemeen --- */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* --- Fotogalerij --- */
+.fotogalerij {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.foto-blok {
+    width: 48%;
+    text-align: center;
+}
+
+.foto-blok img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Mobielvriendelijk */
+@media (max-width: 600px) {
+    .fotogalerij {
+        flex-direction: column;
+    }
+    .foto-blok {
+        width: 100%;
+    }
+}
+
+/* --- MOBIEL FIX VOOR LOGO EN MENU (D + E) --- */
+@media (max-width: 600px) {
+
+    .kop {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .foma_logo {
+        position: static;
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 150px;
+        height: auto;
+    }
+
+    .menu_tabel {
+        float: none;
+        margin: 10px auto 0 auto;
+        text-align: center;
+    }
+
+    .menu_tabel td a,
+    .menu_tabel td {
+        font-size: 18px;
+    }
+
+    .menu_tabel td {
+        padding: 3px 6px;
+    }
+}
+
+/* --- Formulier velden (B) --- */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* --- Submit / reset knoppen (B) --- */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #414f80;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #2f3a60;
+}
+
+/* --- Formulier tabel (C) --- */
+.tabel_offerte {
+    width: 100% !important;
+    border-collapse: collapse;
+}
+
+/* --- WhatsApp floating button --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float svg {
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
