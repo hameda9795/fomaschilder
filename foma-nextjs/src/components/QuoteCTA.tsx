@@ -19,7 +19,7 @@ export default function QuoteCTA() {
           Om een nauwkeurige prijs te kunnen geven, bekijk ik het project altijd eerst ter plaatse.
         </p>
         <Link
-          href="/offerte/"
+          href="/contact/"
           className="inline-flex items-center justify-center gap-2 rounded-full bg-cta-600 px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-cta-700 transition-colors"
         >
           Offerteformulier invullen
