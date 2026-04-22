@@ -127,26 +127,33 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map placeholder + CTA */}
+              {/* Google Map + CTA */}
               <div className="space-y-8">
-              <div className="bg-gray-50 rounded-2xl p-2 border border-gray-100 overflow-hidden">
-                <div className="aspect-[4/3] bg-primary-100 rounded-xl flex items-center justify-center relative">
-                  <MapPin className="h-12 w-12 text-primary-400" />
-                  <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
-                    <p className="text-sm font-medium text-gray-900">
-                      Bemmelseweg 104, 6662 PD Elst
-                    </p>
+                <div className="bg-gray-50 rounded-2xl p-2 border border-gray-100 overflow-hidden">
+                  <div className="aspect-[4/3] rounded-xl overflow-hidden">
+                    <iframe
+                      src="https://maps.google.com/maps?q=Bemmelseweg+104,+6662+PD+Elst,+Netherlands&hl=nl&z=15&ie=UTF8&output=embed"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Locatie Foma Schildersbedrijf"
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="text-center p-3">
                     <a
                       href="https://maps.google.com/?q=Bemmelseweg+104,+6662+PD+Elst"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-accent-600 hover:text-accent-700 font-medium mt-1 inline-block"
+                      className="text-sm text-accent-600 hover:text-accent-700 font-medium inline-block"
                     >
                       Open in Google Maps →
                     </a>
                   </div>
                 </div>
-              </div>
 
               <div className="bg-accent-50 rounded-2xl p-8 border border-accent-100">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
