@@ -1,47 +1,19 @@
 import Link from 'next/link'
-import { Paintbrush, Hammer, Square, GlassWater, Wallpaper, Layers, ArrowRight } from 'lucide-react'
+import { Home, Building, ArrowRight } from 'lucide-react'
 
 const services = [
   {
-    icon: Paintbrush,
-    title: 'Schilderwerk',
-    description: 'Binnen- en buitenschilderwerk van de hoogste kwaliteit. Van kozijnen tot complete gevels.',
-    image: '/images/Schilder.bmp',
+    icon: Home,
+    title: 'Binnenschilderwerk',
+    description:
+      'Muren & plafonds, kozijnen & deuren, radiatoren, trappen & leuningen. Een perfecte afwerking binnenshuis.',
     href: '/diensten/',
   },
   {
-    icon: Hammer,
-    title: 'Stucwerk',
-    description: 'Stucwerkreparaties en kleine stukadoorsklussen voor een strak eindresultaat.',
-    image: '/images/Stukadoor.bmp',
-    href: '/diensten/',
-  },
-  {
-    icon: GlassWater,
-    title: 'Glaswerk',
-    description: 'Vakkundig glaszetten en reparatie van ruiten en kozijnen.',
-    image: '/images/Glas.bmp',
-    href: '/diensten/',
-  },
-  {
-    icon: Square,
-    title: 'Tegelwerk',
-    description: 'Tegelzetten in badkamers, keukens en vloeren met oog voor detail.',
-    image: '/images/Tegel.bmp',
-    href: '/diensten/',
-  },
-  {
-    icon: Wallpaper,
-    title: 'Behangwerk',
-    description: 'Professioneel behangen voor een frisse uitstraling van uw interieur.',
-    image: '/images/Behang.bmp',
-    href: '/diensten/',
-  },
-  {
-    icon: Layers,
-    title: 'Afwerkingen',
-    description: 'Diverse afwerkingswerkzaamheden om uw woning helemaal af te maken.',
-    image: '/images/Afwerking.png',
+    icon: Building,
+    title: 'Buitenschilderwerk',
+    description:
+      'Gevels, buitenkozijnen & dakranden, schuttingen & tuinhuizen, onderhoud & renovatie buitenhoutwerk.',
     href: '/diensten/',
   },
 ]
@@ -58,11 +30,11 @@ export default function ServicesSection() {
             Onze diensten
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Naast schilderwerk bieden wij diverse aanvullende diensten aan voor een compleet resultaat.
+            Foma Schildersbedrijf is gespecialiseerd in professioneel binnen- en buitenschilderwerk. Kwaliteit en vakmanschap staan centraal.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service) => {
             const Icon = service.icon
             return (

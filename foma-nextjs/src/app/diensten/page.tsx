@@ -1,123 +1,72 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import {
+  Home,
+  Building,
   Paintbrush,
-  Hammer,
-  Square,
-  GlassWater,
-  Wallpaper,
-  Layers,
-  CheckCircle,
+  DoorOpen,
+  Flame,
+  ArrowUpRight,
+  Landmark,
+  Frame,
+  Fence,
+  Wrench,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Diensten',
   description:
-    'Bekijk alle diensten van Foma Schildersbedrijf: schilderwerk, stucwerk, glaswerk, tegelwerk, behangwerk en afwerkingen. Vakmanschap sinds 2005.',
+    'Bekijk alle diensten van Foma Schildersbedrijf: professioneel binnenschilderwerk en buitenschilderwerk. Vakmanschap sinds 2005.',
   openGraph: {
     title: 'Diensten | Foma Schildersbedrijf',
     description:
-      'Bekijk alle diensten van Foma Schildersbedrijf: schilderwerk, stucwerk, glaswerk, tegelwerk, behangwerk en afwerkingen.',
+      'Bekijk alle diensten van Foma Schildersbedrijf: professioneel binnenschilderwerk en buitenschilderwerk.',
   },
 }
 
-const services = [
+const binnenServices = [
   {
     icon: Paintbrush,
-    title: 'Schilderwerk',
-    shortDesc:
-      'Professioneel binnen- en buitenschilderwerk voor een perfecte afwerking.',
-    description:
-      'Of het nu gaat om een enkel kozijn of een complete woning, ik lever schilderwerk van de hoogste kwaliteit. Ik werk uitsluitend met professionele materialen van merken zoals Sikkens en Bouwmaat, zodat kwaliteit altijd gegarandeerd is.',
-    features: [
-      'Binnenschilderwerk (muren, plafonds, deuren)',
-      'Buitenschilderwerk (kozijnen, gevels, schuttingen)',
-      'Houtrotreparatie en grondige voorbehandeling',
-      'Lakwerk en beitswerk',
-      'Kleuradvies op maat',
-    ],
-    image: '/images/schilder_1.jpg',
-    imageAlt: 'Voorbeeld van schilderwerk door Foma Schildersbedrijf',
+    title: 'Muren & plafonds',
+    desc: 'Strakke afwerking van wanden en plafonds voor een fris en modern interieur.',
   },
   {
-    icon: Hammer,
-    title: 'Stucwerk',
-    shortDesc:
-      'Stucwerkreparaties en kleine stukadoorsklussen voor een strak resultaat.',
-    description:
-      'Van kleine reparaties tot volledige wanden, ik zorg voor een strak en glad eindresultaat. Ook geschikt voor het egaliseren van oude muren voordat er geschilderd of behangen wordt.',
-    features: [
-      'Stucwerkreparaties',
-      'Wanden en plafonds egaliseren',
-      'Sierpleister aanbrengen',
-      'Voorbereiding voor schilder- of behangwerk',
-    ],
-    image: '/images/stuk_1.jpg',
-    imageAlt: 'Voorbeeld van stucwerk door Foma Schildersbedrijf',
+    icon: DoorOpen,
+    title: 'Kozijnen & deuren',
+    desc: 'Vakkundig schilderwerk van kozijnen, deuren en vensterbanken.',
   },
   {
-    icon: GlassWater,
-    title: 'Glaswerk',
-    shortDesc:
-      'Vakkundig glaszetten en reparatie van ruiten en kozijnen.',
-    description:
-      'Isolatieglas, enkelglas of speciaal glas: ik adviseer en plaats het vakkundig. Ook voor het vervangen van gebroken ruiten kunt u bij mij terecht.',
-    features: [
-      'Enkelglas en isolatieglas plaatsen',
-      'Ruitreparatie en -vervanging',
-      'Kozijnreparaties',
-      'Kitwerk rondom kozijnen',
-    ],
-    image: '/images/glas_1.jpg',
-    imageAlt: 'Voorbeeld van glaswerk door Foma Schildersbedrijf',
+    icon: Flame,
+    title: 'Radiatoren',
+    desc: 'Nette verfservice voor radiatoren zonder druppels of strepen.',
   },
   {
-    icon: Square,
-    title: 'Tegelwerk',
-    shortDesc:
-      'Tegelzetten in badkamers, keukens en vloeren met oog voor detail.',
-    description:
-      'Een mooi tegelwerk begint bij een perfecte ondergrond. Ik zorg voor degelijk voorbereidend werk en een nette, strakke afwerking die jarenlang meegaat.',
-    features: [
-      'Badkamertegels',
-      'Keukenwandtegels',
-      'Vloertegels',
-      'Voegwerk',
-    ],
-    image: '/images/diensten.jpg',
-    imageAlt: 'Voorbeeld van tegelwerk door Foma Schildersbedrijf',
+    icon: ArrowUpRight,
+    title: 'Trappen & leuningen',
+    desc: 'Renovatie en schilderwerk van trappen en leuningen.',
+  },
+]
+
+const buitenServices = [
+  {
+    icon: Landmark,
+    title: 'Gevels',
+    desc: 'Bescherming en verfraaiing van uw gevel tegen weersinvloeden.',
   },
   {
-    icon: Wallpaper,
-    title: 'Behangwerk',
-    shortDesc:
-      'Professioneel behangen voor een frisse uitstraling van uw interieur.',
-    description:
-      'Van effen vliesbehang tot exclusief dessin: ik behang uw muren strak en zonder naden of luchtbellen. Ook voor het verwijderen van oud behang en het voorbereiden van de wanden.',
-    features: [
-      'Vliesbehang en papierbehang',
-      'Fotobehang en exclusieve dessins',
-      'Oud behang verwijderen',
-      'Wandvoorbereiding',
-    ],
-    image: '/images/Behang.bmp',
-    imageAlt: 'Voorbeeld van behangwerk door Foma Schildersbedrijf',
+    icon: Frame,
+    title: 'Buitenkozijnen & dakranden',
+    desc: 'Duurzaam schilderwerk voor kozijnen en dakranden.',
   },
   {
-    icon: Layers,
-    title: 'Afwerkingen',
-    shortDesc:
-      'Diverse afwerkingswerkzaamheden om uw woning helemaal af te maken.',
-    description:
-      'Van plinten en deuren afwerken tot het monteren van klein timmerwerk. Ik zorg dat elk detail klopt en uw woning er perfect uitziet.',
-    features: [
-      'Plinten en architraaf plaatsen',
-      'Deuren afhangen en afwerken',
-      'Klein timmerwerk',
-      'Laatste details en opruimen',
-    ],
-    image: '/images/Afwerking.png',
-    imageAlt: 'Voorbeeld van afwerkingen door Foma Schildersbedrijf',
+    icon: Fence,
+    title: 'Schuttingen & tuinhuizen',
+    desc: 'Beitswerk en verf voor schuttingen en tuinhuizen.',
+  },
+  {
+    icon: Wrench,
+    title: 'Onderhoud & renovatie',
+    desc: 'Vakkundig onderhoud en renovatie van buitenhoutwerk.',
   },
 ]
 
@@ -134,62 +83,141 @@ export default function DienstenPage() {
             Onze diensten
           </h1>
           <p className="mt-6 text-lg text-primary-100 max-w-2xl mx-auto">
-            Van schilderwerk tot complete afwerking: Foma Schildersbedrijf staat voor u klaar 
-            met vakmanschap en persoonlijke service.
+            Foma Schildersbedrijf is gespecialiseerd in binnen- en buitenschilderwerk.
+            Met vakmanschap en persoonlijke service staan wij voor u klaar.
           </p>
         </div>
       </section>
 
-      {/* Services */}
+      {/* Binnenschilderwerk */}
       <section className="py-20 sm:py-28 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="space-y-24">
-            {services.map((service, index) => {
-              const Icon = service.icon
-              const isEven = index % 2 === 0
-
-              return (
-                <div
-                  key={service.title}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${
-                    !isEven ? 'lg:flex-row-reverse' : ''
-                  }`}
-                >
-                  {/* Image */}
-                  <div className={`${!isEven ? 'lg:order-2' : ''}`}>
-                    <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg img-zoom relative">
-                      <Image
-                        src={service.image}
-                        alt={service.imageAlt}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className={`${!isEven ? 'lg:order-1' : ''}`}>
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-50 text-primary-700 mb-6">
-                      <Icon className="h-6 w-6" />
-                    </div>
-                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                      {service.title}
-                    </h2>
-                    <p className="text-gray-600 leading-relaxed mb-6">
-                      {service.description}
-                    </p>
-                    <ul className="space-y-3">
-                      {service.features.map((feature) => (
-                        <li key={feature} className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-accent-500 shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            {/* Images */}
+            <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg img-zoom relative">
+                  <Image
+                    src="/images/stuk_1.jpg"
+                    alt="Binnenschilderwerk voorbeeld 1"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              )
-            })}
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg img-zoom relative">
+                  <Image
+                    src="/images/stuk_2.jpg"
+                    alt="Binnenschilderwerk voorbeeld 2"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div>
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-50 text-primary-700">
+                  <Home className="h-6 w-6" />
+                </div>
+                <span className="text-accent-600 font-semibold tracking-wide uppercase text-sm">
+                  Interieur
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+                Binnenschilderwerk
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-10 text-lg">
+                Of het nu gaat om een enkele muur of een compleet interieur: ik lever
+                binnenschilderwerk van de hoogste kwaliteit. Ik werk uitsluitend met
+                professionele materialen van merken zoals Sikkens en Bouwmaat, zodat
+                kwaliteit altijd gegarandeerd is.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {binnenServices.map((s) => {
+                  const Icon = s.icon
+                  return (
+                    <div
+                      key={s.title}
+                      className="group bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-accent-200 hover:shadow-md transition-all duration-300"
+                    >
+                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white text-primary-700 shadow-sm mb-4 group-hover:bg-primary-700 group-hover:text-white transition-colors">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <h3 className="font-semibold text-gray-900 mb-1.5">
+                        {s.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {s.desc}
+                      </p>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Buitenschilderwerk */}
+      <section className="py-20 sm:py-28 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            {/* Content */}
+            <div className="lg:order-1">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white text-primary-700 shadow-sm">
+                  <Building className="h-6 w-6" />
+                </div>
+                <span className="text-accent-600 font-semibold tracking-wide uppercase text-sm">
+                  Exterieur
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+                Buitenschilderwerk
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-10 text-lg">
+                Van gevels tot schuttingen: ik zorg dat uw buitenhoutwerk goed beschermd
+                is tegen weersinvloeden en er weer strak uitziet. Met grondige
+                voorbehandeling en hoogwaardige verf garandeer ik een langdurig resultaat.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {buitenServices.map((s) => {
+                  const Icon = s.icon
+                  return (
+                    <div
+                      key={s.title}
+                      className="group bg-white rounded-2xl p-6 border border-gray-100 hover:border-accent-200 hover:shadow-md transition-all duration-300"
+                    >
+                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-primary-50 text-primary-700 mb-4 group-hover:bg-primary-700 group-hover:text-white transition-colors">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <h3 className="font-semibold text-gray-900 mb-1.5">
+                        {s.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {s.desc}
+                      </p>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="lg:order-2">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl img-zoom relative">
+                <Image
+                  src="/images/op de ladder.jpg"
+                  alt="Buitenschilderwerk door Foma Schildersbedrijf"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -130,11 +130,8 @@ export default function ContactForm() {
           <option value="Algemene vraag">Algemene vraag</option>
           <option value="Offerte aanvraag">Offerte aanvraag</option>
           <option value="Afspraak maken">Afspraak maken</option>
-          <option value="Schilderwerk">Schilderwerk</option>
-          <option value="Stukadoorwerk">Stukadoorwerk</option>
-          <option value="Tegelwerk">Tegelwerk</option>
-          <option value="Glaszetten">Glaszetten</option>
-          <option value="Vloerwerk">Vloerwerk</option>
+          <option value="Binnenschilderwerk">Binnenschilderwerk</option>
+          <option value="Buitenschilderwerk">Buitenschilderwerk</option>
           <option value="Overige">Overige</option>
         </select>
       </div>

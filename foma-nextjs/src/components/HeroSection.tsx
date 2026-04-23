@@ -31,8 +31,8 @@ export default function HeroSection() {
             Vakmanschap in <span className="text-cta-600">schilderwerk</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-700 max-w-xl">
-            Foma Schildersbedrijf verzorgt professioneel binnen- en buitenschilderwerk, 
-            stucwerk, glaswerk en meer. Met zorg en netheid tegen een redelijke prijs.
+            Foma Schildersbedrijf verzorgt professioneel binnen- en buitenschilderwerk. 
+            Met zorg en netheid tegen een redelijke prijs.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Link

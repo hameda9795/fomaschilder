@@ -4,11 +4,11 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Foto\'s',
   description:
-    'Bekijk foto\'s van ons werk: voor- en na foto\'s van schilderwerk, stucwerk, glaswerk en meer. Foma Schildersbedrijf laat resultaten zien.',
+    'Bekijk foto\'s van ons werk: voor- en na foto\'s van binnen- en buitenschilderwerk. Foma Schildersbedrijf laat resultaten zien.',
   openGraph: {
     title: 'Foto\'s | Foma Schildersbedrijf',
     description:
-      'Bekijk foto\'s van ons werk: voor- en na foto\'s van schilderwerk, stucwerk, glaswerk en meer.',
+      'Bekijk foto\'s van ons werk: voor- en na foto\'s van binnen- en buitenschilderwerk.',
   },
 }
 
@@ -33,9 +33,6 @@ const beforeAfter = [
 const otherPhotos = [
   { src: '/images/schilder_1.jpg', alt: 'Schilderwerk detail' },
   { src: '/images/schilder_2.jpg', alt: 'Schilderwerk resultaat' },
-  { src: '/images/stuk_1.jpg', alt: 'Stucwerk detail' },
-  { src: '/images/stuk_2.jpg', alt: 'Stucwerk resultaat' },
-  { src: '/images/glas_1.jpg', alt: 'Glaswerk' },
   { src: '/images/ladder samen.jpg', alt: 'Werk in uitvoering' },
   { src: '/images/trap_1.JPG', alt: 'Trap renovatie' },
   { src: '/images/trap_2.JPG', alt: 'Trap schilderwerk' },
@@ -57,7 +54,7 @@ export default function FotosPage() {
             Foto\'s van ons werk
           </h1>
           <p className="mt-6 text-lg text-primary-100 max-w-2xl mx-auto">
-            Een impressie van recente projecten. Van schilderwerk tot stucwerk: 
+            Een impressie van recente projecten. Van binnen- tot buitenschilderwerk: 
             wij laten graag het resultaat zien.
           </p>
         </div>

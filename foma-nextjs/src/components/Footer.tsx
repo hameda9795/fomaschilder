@@ -10,8 +10,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Foma Schildersbedrijf</h3>
             <p className="text-primary-200 text-sm leading-relaxed mb-6">
-              Sinds 2005 uw betrouwbare partner voor binnen- en buitenschilderwerk, 
-              stucwerk, glaswerk en meer. Vakmanschap en kwaliteit staan bij ons voorop.
+              Sinds 2005 uw betrouwbare partner voor professioneel binnen- en buitenschilderwerk. 
+              Vakmanschap en kwaliteit staan bij ons voorop.
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-200">
               <Clock className="h-4 w-4 text-accent-400" />

@@ -45,8 +45,8 @@ export default function AboutSection() {
                 ligt bij schilderwerk, zowel binnen als buiten.
               </p>
               <p>
-                Daarnaast kan ik kleine aanvullende klusjes uitvoeren, zoals stucwerkreparaties, 
-                glaswerk, tegelwerk en afwerkingen.
+                Ik ben gespecialiseerd in alle facetten van schilderwerk, van muren en plafonds 
+                tot kozijnen, gevels en buitenhoutwerk.
               </p>
               <p>
                 Ik ben een gekwalificeerde vakman die met zorg en netheid te werk gaat en dat 
